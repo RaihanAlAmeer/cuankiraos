@@ -1,40 +1,43 @@
 body, html{
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: sticky;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 27px 38px;
-    text-decoration: none;
-    scroll-behavior: smooth;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
 
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.spacing-scroll{
+  padding-top: 50px ;
+  margin-top: -50px;
+}
 .home-bg{
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0), #654520), url(../asset/Pizza-3007395.jpg);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), #654520), url(../asset/bg-home.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -58,8 +61,10 @@ ul {
 .flex-section section{
     margin:10px;
     flex: 1;
-    background-color: white;
     border-radius: 5%;
     margin: 50px;
+    text-align: center;
 }
+
+
 
